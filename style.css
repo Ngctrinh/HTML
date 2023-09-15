@@ -4,36 +4,66 @@ html {
 * {
 font-family:arial, san-serif;
 }
-.menu-bar{
-background-color: #bc986a;
-}
+
 body {
-margin: 0;
+  margin: 0;
+  }
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
+.background-img {
+  height: 300px;
+  max-width: 100%;
+  background-image: url(https://cdn.pixabay.com/photo/2014/09/10/00/59/mountains-440520_1280.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 -500px;
+  opacity: 0.9;
+}
+.avatar {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  margin: 0;
+}
+.avatar img {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px; 
+  margin:0;
+}
+.avatar h1 {
+ display: flex;
+ align-items: center;
+ margin: 0;
+}
+
+.menu-bar {
+  display: flex;
+  margin: 0;
 }
 .menu-bar ul {
 list-style-type: none;
 display: flex;
 flex-direction: row;
-justify-content:center;
-padding:0;
-margin:0;
+justify-content: right;
+align-items: center;
+flex-grow: 1 ;
 }
 
 .menu-bar li {
-padding: 20px;
+padding: 8px 16px;
 }
-.menu-bar li:hover {
+.menu-bar ul li:hover {
   background-color: #886638;
   color: white;
 }
-.header {
-display: flex;
-flex-direction:row;
-justify-content: center;
-height: 400px;
-border: 2px solid #bc986a;
-margin: 50px;
-}
+
 img {
 width:350px;
 flex-grow: 0;
