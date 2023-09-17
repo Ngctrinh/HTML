@@ -2,7 +2,7 @@ html {
   font-size: 20px;
 }
 * {
-font-family:arial, san-serif;
+font-family: Arial, Verdana, Tahoma;
 }
 
 body {
@@ -19,8 +19,21 @@ body {
   background-image: url(https://cdn.pixabay.com/photo/2014/09/10/00/59/mountains-440520_1280.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 0 -500px;
+  background-position: 0 -400px;
+  background-attachment: fixed;
   opacity: 0.9;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.background-img h1,p {
+  margin: 0;
+  padding: 10px;
+}
+.background-img p {
+  border-bottom: 1px solid white;
 }
 .avatar {
   display: flex;
@@ -34,7 +47,7 @@ body {
   border-radius: 100%;
   display: flex;
   justify-content: center;
-  padding: 10px; 
+  padding: 10px 20px; 
   margin:0;
 }
 .avatar h1 {
@@ -64,40 +77,42 @@ padding: 8px 16px;
   color: white;
 }
 
-img {
-width:350px;
+.intro img {
+max-width:350px;
 flex-grow: 0;
-margin: 25px;
+margin: 20px;
 }
 .intro {
 flex-grow: 1;
 display: flex;
 margin: 20px;
-flex-direction:column;
+flex-direction:row;
 justify-content:center;
 }
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+}
+.info p {
+  line-height: 30px;
+}
 
-.target{
+.target {
+flex-grow: 1;
 display: flex;
+margin: 20px;
 flex-direction:row;
-justify-content:left;
-margin: 50px;
+justify-content:center;
 }
-
-.target h2 {
-padding-right: 50px;
-}
-
-.target ul {
-border-left: 2px solid #bc986a;
-}
-.target li {
-list-style-type: none;
-line-height: 40px;
+.target img {
+  max-width:350px;
+  flex-grow: 0;
+  margin: 20px;
 }
 
 .skill {
-margin:  50px;
 
 }
 
