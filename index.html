@@ -43,10 +43,8 @@
           </div>
 
         </div>
-          
       
-      
-     <div class="target">
+     <div class="goal">
       <div class="info">
         <h2>Mục tiêu</h2>
        <p>Tôi đã đặt mục tiêu nâng cao khả năng giao tiếp của mình bằng Tiếng Anh để có thể trò chuyện một cách trôi chảy và tự tin. Tôi tin rằng việc nắm vững ngôn ngữ này sẽ mở ra cánh cửa đến nhiều cơ hội và tạo nên những kết nối mới thú vị. Ngoài ra, tôi cũng đang học và rèn kỹ năng thiết kế web để có thể tạo ra một trang web đơn giản nhưng chức năng, mang lại trải nghiệm tốt cho người dùng. Tôi đặt lòng yêu thích và sự cống hiến vào việc phát triển những mục tiêu này, và mong muốn chia sẻ kiến thức và kinh nghiệm của mình với mọi người. Hãy cùng nhau trải nghiệm và khám phá những điều tuyệt vời trên trang web này!</p>
@@ -76,25 +74,22 @@
             </tr>   
         </table>
       </div>
-  
-      
-        
+    
       </div> 
  
          <div class="form">
            <h2>Gửi email</h2>
         <form id="contact-form">
-        <label>Tên:</label>
-        <input placeholder="Tên" type="text"/>
+        <div class="name">
+          <input placeholder="Họ" type="text" size="40" id="lastname" name="lastname"/>
+          <input placeholder="Tên" type="text" size="40" id="fistname" name="fistname"/>
+        </div>
+        
+        <input type="text" placeholder="Email" size="40" id="email" name="email"/>
         <br>
-        <label>Email:</label>
-        <input type="text" placeholder="Email"/>
+        <textarea placeholder="Message" id="message" name="message"></textarea>
         <br>
-        <label>Message:</label>
-        <br>
-        <textarea placeholder="Message" rows="4" cols="30"></textarea>
-        <br>
-        <input type="submit" value="GỬI">
+        <input type="submit" value="GỬI" name="submit">
         </form>
       </div>
         

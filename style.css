@@ -80,12 +80,12 @@ padding: 8px 16px;
 .intro img {
 max-width:350px;
 flex-grow: 0;
-margin: 20px;
+margin-right: 20px;
 }
 .intro {
 flex-grow: 1;
 display: flex;
-margin: 20px;
+margin:100px 250px;
 flex-direction:row;
 justify-content:center;
 }
@@ -97,40 +97,68 @@ justify-content:center;
 }
 .info p {
   line-height: 30px;
+  padding: 0;
 }
 
-.target {
-flex-grow: 1;
+.goal {
+
 display: flex;
-margin: 20px;
+margin:100px 250px;
 flex-direction:row;
 justify-content:center;
 }
-.target img {
+.goal img {
   max-width:350px;
   flex-grow: 0;
-  margin: 20px;
+  margin-left: 20px;
 }
 
 .skill {
-
+  margin:100px 250px;
 }
 
 table {
   border-collapse: collapse;
   width: 100%;
+
 }
 
 th, td {
-  border: 3px solid  #584328;
+  border: 1px solid  #6e4f27;
   text-align: center;
   padding: 10px 10px 10px 10px;
 }
 
 th {
-  background-color:#bc986a;
+  background-color:#d6b181;
   color: white;
 }
+.form {
+  display: flex;
+  margin: 100px 250px;
+ 
+}
+.form h2 {
+  padding-right: 50px;
+  text-align: justify;
+  margin: 0;
+}
+.name {
+  display: flex;
+}
+ #lastname #fistname {
+  width: 50%;
+ }
+ #email {
+  width: 100%;
+ }
+ #message {
+  width: 100%;
+  height: 100px;
+ }
+
+
+
 .footer {
 display: flex;
 flex-direction:row;
@@ -140,9 +168,7 @@ margin:0;
 background-color: #110e08;
 color: white;
 }
-.contact {
-text-align:center;
-}
+
 .link a{
 text-decoration: none;
 color: #e99f4b;
@@ -152,13 +178,7 @@ line-height: 50px;
   text-decoration: underline;
   color: #2F5A78;
 }
-.form{
-border-left: 5px solid;
-padding-left: 20px
-}
-#contact-form {
-  line-height: 2em;
-}
+
 textarea {
    border: 1px solid rgb(34, 57, 90);
    padding: 5px 5px 5px 5px;
@@ -168,10 +188,7 @@ textarea:hover {
   border: 2px solid black;
   border-radius: 5px;
 }
-label {
-  font-weight: bold;
-  line-height: 30px;
-}
+
 input[type='submit'] {
   background-color: #bc986a  ;
   color: white;
@@ -186,7 +203,7 @@ input[type='submit']:hover {
 }
 input[type='text'] {
   border: 1px solid rgb(34, 57, 90);
-  padding: 10px;
+  
 }
 input[type='text']:hover {
   border: 2px solid black;
