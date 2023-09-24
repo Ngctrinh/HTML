@@ -2,12 +2,14 @@ html {
   font-size: 20px;
 }
 * {
-font-family: Arial, Verdana, Tahoma;
-}
-
-body {
+  font-family: Arial, Verdana, Tahoma;
   margin: 0;
-  }
+  padding: 0;
+  box-sizing: border-box;
+}
+body h2{
+  margin-bottom: 20px;
+}
 .header {
   display: flex;
   flex-direction: column;
@@ -28,12 +30,14 @@ body {
   align-items: center;
   flex-direction: column;
 }
-.background-img h1,p {
+.background-img h1 {
   margin: 0;
   padding: 10px;
 }
 .background-img p {
   border-bottom: 1px solid white;
+  margin: 0;
+  padding: 10px;
 }
 .avatar {
   display: flex;
@@ -133,119 +137,125 @@ th {
   background-color:#d6b181;
   color: white;
 }
-.form {
-  display: flex;
+.send {
   margin: 100px 250px;
- 
 }
-.form h2 {
-  padding-right: 50px;
-  text-align: justify;
-  margin: 0;
-}
-.name {
+.form-contact{
+  box-sizing: border-box;
   display: flex;
-}
- #lastname #fistname {
-  width: 50%;
- }
- #email {
-  width: 100%;
- }
- #message {
-  width: 100%;
-  height: 100px;
- }
-
-
-
-.footer {
-display: flex;
-flex-direction:row;
-justify-content:space-between;
-padding: 50px 250px;
-margin:0;
-background-color: #110e08;
-color: white;
-}
-
-.link a{
-text-decoration: none;
-color: #e99f4b;
-line-height: 50px;
-}
-.link a:hover {
-  text-decoration: underline;
-  color: #2F5A78;
-}
-
-textarea {
-   border: 1px solid rgb(34, 57, 90);
-   padding: 5px 5px 5px 5px;
-   max-width: 100%;
-}
-textarea:hover {
-  border: 2px solid black;
-  border-radius: 5px;
-}
-
-input[type='submit'] {
-  background-color: #bc986a  ;
-  color: white;
-  padding: 10px 25px;
-  font-weight: bold;
-  border: none;
-  border-radius: 100px;
-  font-size: 20px;
-}
-input[type='submit']:hover {
-  background-color: grey;
-}
-input[type='text'] {
-  border: 1px solid rgb(34, 57, 90);
-  
-}
-input[type='text']:hover {
-  border: 2px solid black;
-  border-radius: 5px;
-}
-@media only screen and (max-width: 600px) {
-.header {
- display: flex;
-  flex-direction: column;
-  margin: 15px;
-  justify-content: center;
-  align-content: center;
   align-items: center;
+  justify-content: center;
 }
-.menu-bar ul {
-  list-style-type: none;
+form{
+  width: 90%;
+  max-width: 600px;
+}
+.input-group{
+  margin-bottom: 30px;
+  position: relative;
+}
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  outline: 0;
+  border: 1px solid black;
+  font-size: 15px;
+ }
+label {
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 10px;
+  cursor: text;
+  transition: 0.2s;
+}
+button {
+  padding: 10px 0;
+  color: white;
+  outline: none;
+  border: none;
+  background-color:#d6b181;
+  width: 100%;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 15px;
+}
+i {
+  padding-right: 10px;
+}
+button i {
+  padding-left: 10px;
+}
+input:focus~label,
+input:valid~label, 
+textarea:focus~label,
+textarea:valid~label{
+  top: -35px;
+  font-size: 14px;
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.row .input-group{
+  flex-basis: 48%;
+}
+.footer {
+  display: flex;
+  flex-direction:column;
+  justify-content:space-between;
+  margin:0;
+  background-color: #110e08;
+  color: white;
+  }
+.footer h2 {
+  margin: 20px 250px;
+}
+.contact-group {
+  display: flex;
+  flex-direction: row ;
+  justify-content: space-between;
+  margin: 0 250px 100px 250px;
+}
+.contact {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  font-size: 18px;
+  line-height: 30px;
 }
-.intro{
-  margin: 0 10px;
-  padding: 0 ;
+.link i{
+  padding: 0 10px;
+  color: #ffffff;
 }
-.intro h1,p {
-  margin: 0 0 15px 0;
+.address {
+  padding-left: 20px;
+}  
+.link i:hover {
+  color: #d6b181;
 }
-img {
-  max-width:300px;
-  display:flex;
-  justify-content: center;
+button:hover {
+  background: gray;
 }
-.header{
-  height:550px;
-}
-.skill, .target {
-margin: 20px;
-}
-.target h2 {
-padding-right: 5px;
-}
-.footer{
-  padding: 10px;
-}
+
+@media only screen and (max-width: 800px) {
+  * {
+    margin: 0;
+  }
+  .intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+   .intro img {
+    max-width: 400px;
+   }
+  .goal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
