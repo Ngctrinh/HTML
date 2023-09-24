@@ -240,22 +240,54 @@ button:hover {
 }
 
 @media only screen and (max-width: 800px) {
-  * {
-    margin: 0;
-  }
+
   .intro {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin:20px 10px;
    }
    .intro img {
     max-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
    }
   .goal{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 20px 10px;
+  }
+  .goal img {
+    margin: 20px 0 0 0;
+  }
+  .skill{
+    margin: 20px 10px;
+  }
+  .send{
+    margin: 20px 10px;
+  }
+  .footer h2 {
+    margin: 10px;
+  }
+  .contact-group{
+    margin: 0 15px 50px 15px;
+    display:flex;
+    flex-direction: column;
+
+  }
+  .contact{
+    display:flex;
+    flex-direction: column;
+  }
+  .address{
+    padding: 10px 0;
+  }px
+  .background-img {
+    background-position: 0 -100px; 
   }
 }
