@@ -232,6 +232,7 @@ button:hover {
 img {
   border: solid 1px;
   padding: 5px;
+  cursor: pointer;
 }
 .copyright {
   text-align: center;
